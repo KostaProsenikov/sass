@@ -7,7 +7,7 @@
         {
             "label": "Sass Compile",
             "type": "shell",
-            "command": "sass --watch ${workspaceFolder}\\scss\\${fileBasenameNoExtension}.scss:${workspaceFolder}\\css\\${fileBasenameNoExtension}.css",
+            "command": "sass --watch scss/${fileBasenameNoExtension}.scss:css/${fileBasenameNoExtension}.css",
             "group": "build"
         }
     ]
