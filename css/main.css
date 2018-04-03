@@ -24,20 +24,32 @@ a {
   color: white;
   padding: 8px 12px; }
 
+* html body {
+  font-size: 125%; }
+
 #header {
-  border-radius: 6px;
-  border: 2px solid greenyellow;
+  border-radius: 5px;
+  border: 3px solid greenyellow;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
   height: 60px;
   background-color: #170a48; }
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
     color: white; }
+  #header #logo {
+    color: white; }
 
 #main {
   width: 960px;
   margin-left: auto;
   margin-right: auto; }
+  #main #content {
+    color: black; }
+  #main #sidebar {
+    color: black; }
 
 #footer {
   height: 90px;
