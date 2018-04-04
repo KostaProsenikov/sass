@@ -28,6 +28,32 @@ button {
   }
 }
 
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
+.cta-button {
+  @extend .warning-button;
+  @include rounded;
+  font-weight: bold;
+}
+
+%highlight {
+  font-style: italic;
+}
+
+.sub-title {
+  @extend %highlight;
+  @extend .newClass !optional;
+  font-size: 20px;
+}
+
 h2 {
   @include large-text;
 }

@@ -20,6 +20,23 @@ button {
   button:hover {
     background-color: #f7a779; }
 
+.error, .critical-error {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
+.cta-button {
+  border-radius: 6px;
+  font-weight: bold; }
+
+.sub-title {
+  font-style: italic; }
+
+.sub-title {
+  font-size: 20px; }
+
 h2 {
   font-size: 22px;
   font-weight: bold; }
@@ -32,7 +49,7 @@ a {
   a:hover {
     color: #9a3e0a; }
 
-.warning-button {
+.warning-button, .cta-button {
   background-color: orange;
   color: white;
   padding: 8px 12px; }
