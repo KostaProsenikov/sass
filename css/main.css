@@ -6,13 +6,19 @@ a {
 
 body {
   font-family: "Alegreya Sans", Arial, sanf-serif;
-  color: #222222; }
+  color: #222222;
+  font-size: 1.125em; }
   @media only screen and (max-width: 960px) {
     body {
       font-size: 140%; } }
 
 h1, h2, h3, h4 {
   font-family: "Titillium Web", Georgia, serif; }
+
+button {
+  background-color: #f27731; }
+  button:hover {
+    background-color: #f7a779; }
 
 h2 {
   font-size: 22px;
@@ -23,6 +29,8 @@ p {
 
 a {
   color: #f27731; }
+  a:hover {
+    color: #9a3e0a; }
 
 .warning-button {
   background-color: orange;
@@ -43,7 +51,13 @@ a {
   #header #main-menu li {
     display: inline; }
   #header #main-menu a {
-    color: white; }
+    color: white;
+    padding: 6px 8px;
+    border-bottom: 1px solid rgba(254, 254, 254, 0);
+    transition: border-bottom 0.5s;
+    transition-timing-function: ease-in-out; }
+    #header #main-menu a:hover {
+      border-bottom: 1px solid #fefefe; }
   #header #logo {
     color: white; }
 
@@ -56,12 +70,19 @@ a {
       width: auto;
       max-width: 960px; } }
   #main #content {
-    color: black; }
+    float: left;
+    width: 69.75%; }
   #main #sidebar {
-    color: black; }
+    float: right;
+    width: 23.25%; }
+    #main #sidebar li {
+      list-style-type: none;
+      padding: 1em 1.25em;
+      border-bottom: 1px dashed #999; }
+      #main #sidebar li:hover {
+        background-color: #efefef; }
 
 #footer {
-  height: 90px;
-  background-color: #ccf962; }
+  height: 90px; }
 
 /*# sourceMappingURL=main.css.map */
